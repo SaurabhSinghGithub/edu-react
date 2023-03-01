@@ -1,0 +1,152 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary-font-color: rgb(16, 186, 186);
+
+html {
+    font-size: 62.5%;
+}
+
+
+// Header styling
+.header {
+
+    // height: 15vh;
+
+    background: #f1f1f1 !important;
+
+    .navbar {
+        background: #f1f1f1 !important;
+
+        .container-fluid {
+
+            .navbar-brand {
+                font-size: 2rem;
+                text-transform: uppercase;
+
+                img {
+
+                    transition: all 0.2s;
+
+                    &:hover {
+
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .navbar-collapse {
+                justify-content: flex-end;
+
+                .navbar-nav {
+                    a {
+
+                        text-decoration: none;
+                        margin: 0 2rem;
+                        color: $primary-font-color;
+                        font-size: 2rem;
+                        transition: all 0.2s;
+
+                        &:hover {
+                            color: aqua;
+                            font-size: 2.1rem;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+// section styling
+
+section {
+    // height: 80vh;
+}
+
+.section {
+
+    padding: 2rem;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    button {
+        max-width: 30%;
+        transition: all 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+    }
+
+    img {
+        animation: rollBack 2s linear infinite alternate-reverse;
+
+    }
+
+}
+
+@keyframes rollBack {
+
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+
+}
+
+
+
+// Footer styling
+.footer {
+    // height: 5vh;
+    padding: 2rem;
+    background: #333232 !important;
+    color: white;
+}
+
+// servive styling
+
+.service {
+    padding: 2rem;
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+// contact styling
+
+.contact {
+    padding: 10rem;
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    form {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
